@@ -25,11 +25,11 @@ public class QuickSort {
         while (i < j) {
             do {
                 i++;
-            } while (arr[i].word.compareTo(pivot.word) < 0 );
+            } while (arr[i].name.compareTo(pivot.name) < 0 );
 
             do {
                 j--;
-            } while (arr[j].word.compareTo(pivot.word) > 0);
+            } while (arr[j].name.compareTo(pivot.name) > 0);
             if (i < j) {
                 Node val1 = arr[i];
                 Node val2 = arr[j];

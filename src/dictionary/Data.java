@@ -9,38 +9,38 @@ package dictionary;
  * @author ishay
  */
 public class Data {
-    private String text, dec;
+    private String name, num;
 
-    public Data(String text, String dec) {
-        this.text = text;
-        this.dec = dec;
+    public Data(String name, String num) {
+        this.name = name;
+        this.num = num;
     }
     
     /**
-     * @return the text
+     * @return the name
      */
-    public String getText() {
-        return text;
+    public String getname() {
+        return name;
     }
 
     /**
-     * @param text the text to set
+     * @param name the name to set
      */
-    public void setText(String text) {
-        this.text = text;
+    public void setname(String name) {
+        this.name = name;
     }
 
     /**
-     * @return the dec
+     * @return the num
      */
-    public String getDec() {
-        return dec;
+    public String getnum() {
+        return num;
     }
 
     /**
-     * @param dec the dec to set
+     * @param num the num to set
      */
-    public void setDec(String dec) {
-        this.dec = dec;
+    public void setnum(String num) {
+        this.num = num;
     }
 }

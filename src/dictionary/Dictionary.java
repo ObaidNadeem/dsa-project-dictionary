@@ -102,6 +102,9 @@ public class Dictionary extends javax.swing.JFrame {
         theTree.addNode("Ahmed", "+926589732512");
 
         theTree.addNode("Inam", "+926598730125");
+        
+        theTree.addNode("Salman", "+926556980125");
+
 
         // Different ways to traverse binary trees
         // theTree.inOrderTraverseTree(theTree.root);
@@ -119,7 +122,7 @@ public class Dictionary extends javax.swing.JFrame {
         obj1.quickSort(0, arrNew.length - 1);
         for (Node elem : obj1.arr) {
             arr.add(elem);
-            mod.addElement(elem.word);
+            mod.addElement(elem.name);
         }
 
 //        obj = new Data("Apple", "juicy fruit");
@@ -135,7 +138,7 @@ public class Dictionary extends javax.swing.JFrame {
         // TODO add your handling code here:
         if (!list.isSelectionEmpty()) {
             int index = list.getSelectedIndex();
-            txtResult.setText(arr.get(index).meaning);
+            txtResult.setText(arr.get(index).number);
         }
     }//GEN-LAST:event_listValueChanged
 
@@ -158,7 +161,7 @@ public class Dictionary extends javax.swing.JFrame {
                 return;
             }
         }
-        txtResult.setText("This word not found");
+        txtResult.setText("This name not found");
         list.clearSelection();
     }//GEN-LAST:event_txtKeyTyped
 

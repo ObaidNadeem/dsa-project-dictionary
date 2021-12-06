@@ -19,10 +19,10 @@ public class BinaryTree {
         this.arrayList = new ArrayList<>();
     }
 
-    public void addNode(String word, String meaning) {
+    public void addNode(String name, String number) {
 
         // Create a new Node and initialize it
-        Node newNode = new Node(word, meaning);
+        Node newNode = new Node(name, number);
 
         // If there is no root this becomes root
         if (root == null) {
@@ -46,7 +46,7 @@ public class BinaryTree {
 
                 // Check if the new node should go on
                 // the left side of the parent node
-                if (word.compareTo(focusNode.word) < 0) {
+                if (name.compareTo(focusNode.name) < 0) {
 
                     // Switch focus to the left child
                     focusNode = focusNode.leftChild;
@@ -124,23 +124,23 @@ public class BinaryTree {
 
 class Node {
 
-    String word;
-    String meaning;
+    String name;
+    String number;
 
     Node leftChild;
     Node rightChild;
 
-    Node(String word, String meaning) {
+    Node(String name, String number) {
 
-        this.word = word;
-        this.meaning = meaning;
+        this.name = name;
+        this.number = number;
 
     }
 
     @Override
     public String toString() {
 
-        return word + " has the meaning" + meaning;
+        return name + " has the number" + number;
 
         /*
 		 * return name + " has the key " + key + "\nLeft Child: " + leftChild +
